@@ -1,0 +1,42 @@
+Love\Test\PeopleBundle\Entity\Person:
+    type: entity
+    table: Person
+    id:
+        personid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: PersonID
+            generator:
+                strategy: IDENTITY
+    fields:
+        first:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: First
+        middle:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: Middle
+        last:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: Last
+        age:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Age
+    lifecycleCallbacks: {  }
