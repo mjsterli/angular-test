@@ -1,0 +1,8 @@
+love_test_people:
+    resource: "@LoveTestPeopleBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
